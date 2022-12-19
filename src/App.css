@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "mini-wakuwaku";
-  src: local("mini-wakuwaku"),
-    url(./assets/fonts/mini-wakuwaku.otf) format("otf");
+  font-family: 'mini-wakuwaku';
+  src: local('mini-wakuwaku'),
+    url(./assets/fonts/mini-wakuwaku.otf) format('otf');
 }
 
 * {
-  font-family: "mini-wakuwaku";
+  font-family: 'mini-wakuwaku';
 }

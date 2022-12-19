@@ -1,10 +1,14 @@
 module.exports = {
   content: ['./index.html', './src/**/*.{ts,tsx}'],
-  darkMode: 'media', // or 'media' or 'class'
+  darkMode: 'jit',
+  content: [
+    './*.html',
+    './src/**/*.{js,jsx,ts,tsx}',
+  ],
   theme: {
     colors: {
-      primary: 'var(--colors-primary)',
-      background: 'var(--colors-background)'
+      primary: 'rgb(var(--colors-primary))',
+      background: 'rgb(var(--colors-background))'
     },
     extend: {},
   },

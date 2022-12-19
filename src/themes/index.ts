@@ -20,7 +20,10 @@ export const setColor2PropertyByHex = (
   name: string,
   hexColor: string,
 ): void => {
-  document.documentElement.style.setProperty(`--colors-${name}`, hexColor)
+  document.documentElement.style.setProperty(
+    `--colors-${name}`,
+    hex2rgb(hexColor),
+  )
 }
 
 export const applyTheme = (

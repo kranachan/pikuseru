@@ -1,0 +1,22 @@
+.button {
+  @apply grid grid-flow-col gap-2;
+  @apply items-center justify-center;
+  @apply bg-primary/30 text-primary;
+  @apply border border-primary;
+  @apply p-3 rounded-3xl;
+  @apply transition-all;
+  @apply hover:bg-primary/40;
+
+  box-shadow: 2px 2px 0px rgb(var(--colors-primary));
+
+  &.disabled {
+    @apply text-primary/30;
+  }
+
+  &:active {
+    @apply bg-primary/50;
+
+    box-shadow: 0px 0px 0px rgb(var(--colors-primary)),
+      inset 2px 2px 0px rgb(var(--colors-primary));
+  }
+}

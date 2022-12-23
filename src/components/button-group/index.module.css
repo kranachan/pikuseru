@@ -1,0 +1,23 @@
+.group-root {
+  @apply flex flex-col;
+
+  > .group-name {
+    @apply text-primary pl-4;
+  }
+
+  > .group-buttons {
+    @apply flex rounded-3xl;
+  }
+}
+
+.is-first {
+  @apply rounded-l-3xl rounded-r-none border-r-0;
+}
+
+.is-middle {
+  @apply rounded-none border-x-0;
+}
+
+.is-last {
+  @apply rounded-r-3xl rounded-l-none border-l-0;
+}

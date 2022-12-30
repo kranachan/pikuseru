@@ -2,7 +2,7 @@ import clsx from 'clsx'
 import { FC } from 'react'
 import styles from './index.module.css'
 
-type ButtonProps = {} & React.ButtonHTMLAttributes<HTMLButtonElement>
+export type ButtonProps = {} & React.ButtonHTMLAttributes<HTMLButtonElement>
 
 export const Button: FC<ButtonProps> = (props) => {
   const { className, children, disabled, ...rest } = props

@@ -2,7 +2,7 @@ import clsx from 'clsx'
 import { Children, cloneElement, FC, isValidElement } from 'react'
 import styles from './index.module.css'
 
-type ButtonGroupProps = {
+export type ButtonGroupProps = {
   groupName?: string
   styleForButtons?: string
 } & React.HTMLAttributes<HTMLDivElement>

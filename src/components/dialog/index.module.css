@@ -1,0 +1,26 @@
+.overlay {
+  @apply fixed top-0 left-0 z-10;
+  @apply w-screen h-screen bg-background/80;
+}
+
+.root {
+  @apply fixed top-0 left-0 bottom-0 right-0 m-auto z-20;
+  @apply px-9 py-8 border border-primary rounded-3xl;
+  @apply bg-background;
+
+  width: max-content;
+  height: max-content;
+  box-shadow: 2px 2px 0px rgb(var(--colors-primary));
+
+  > .header {
+    @apply flex items-center;
+
+    > .headline {
+      @apply text-2xl text-primary pr-24;
+    }
+
+    > .close-btn {
+      @apply ml-auto;
+    }
+  }
+}

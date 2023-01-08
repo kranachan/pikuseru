@@ -1,4 +1,8 @@
 import { ColorScheme, Theme } from 'constants/theme'
+import { chestnut } from './chestnut'
+import { daphne } from './daphne'
+import { ajisai } from './ajisai'
+import { maackia } from './maackia'
 
 export const hex2rgb = (hexColor: string) => {
   if (!hexColor.startsWith('#')) {
@@ -34,3 +38,10 @@ export const applyTheme = (
     setColor2PropertyByHex(propertyName, hexColor)
   })
 }
+
+export const systemScheme = window.matchMedia('(prefers-color-scheme: dark)')
+  .matches
+  ? ColorScheme.Dark
+  : ColorScheme.Light
+
+export { chestnut, daphne, ajisai, maackia }

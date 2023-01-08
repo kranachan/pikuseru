@@ -1,0 +1,82 @@
+.layout {
+  @apply w-screen h-screen p-12;
+}
+
+.header {
+  @apply flex items-center;
+
+  > .menu {
+    @apply w-[58px] h-[58px];
+    @apply mr-6;
+  }
+
+  > .appName {
+    @apply text-primary text-2xl;
+    @apply ml-3 flex-shrink-0;
+  }
+
+  > .options {
+    @apply grid grid-flow-col gap-4;
+    @apply ml-auto;
+  }
+}
+
+.canvas-root {
+  @apply w-full h-[calc(100vh-312px)] mt-10 mb-8 overflow-hidden;
+  @apply bg-primary/30 border border-primary rounded-3xl;
+  @apply flex items-center justify-center;
+
+  box-shadow: 2px 2px 0px rgb(var(--colors-primary));
+}
+
+.guide {
+  @apply w-[370px] h-auto text-primary;
+  @apply flex flex-wrap flex-shrink-0 gap-x-4 gap-y-6;
+  @apply justify-center items-center;
+
+  > p {
+    @apply text-xl text-center;
+  }
+
+  > span {
+    @apply text-sm;
+  }
+}
+
+.modify-bar {
+  @apply flex gap-4;
+
+  > .modify-output {
+    @apply flex gap-4 ml-auto items-end;
+  }
+}
+
+.theme-header {
+  @apply flex items-center gap-3;
+  @apply text-primary text-xl mt-10;
+}
+
+.theme-colors {
+  @apply flex gap-10 mt-6;
+
+  > .theme-color-self {
+    @apply flex justify-center items-center;
+    @apply w-16 h-16 rounded-3xl text-background;
+    @apply cursor-pointer;
+
+    > .theme-color-selected-icon > path:first-child {
+      @apply origin-center;
+
+      animation: 8s rotate linear infinite;
+    }
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

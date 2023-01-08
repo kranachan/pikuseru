@@ -10,3 +10,8 @@ export enum ColorScheme {
 }
 
 export type Theme = Record<ColorScheme.Light | ColorScheme.Dark, ColorTokens>
+
+export interface ThemeOptions {
+  scheme: ColorScheme
+  theme: Theme
+}

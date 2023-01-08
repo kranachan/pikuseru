@@ -9,5 +9,12 @@
 }
 
 * {
+  @apply select-none;
+
   font-family: 'mini-wakuwaku';
+}
+
+html,
+body {
+  @apply bg-background;
 }

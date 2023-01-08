@@ -1,0 +1,26 @@
+.root {
+  @apply w-20 h-9 p-2.5 bg-primary/30 text-primary;
+  @apply relative flex justify-start items-center;
+  @apply border border-primary rounded-full;
+  @apply cursor-pointer;
+
+  > .status {
+    @apply w-6 h-6 bg-primary rounded-full;
+  }
+
+  > .on-icon {
+    @apply absolute left-2;
+  }
+
+  > .off-icon {
+    @apply absolute right-2;
+  }
+
+  &[data-is-on='true'] {
+    @apply justify-end bg-primary text-background;
+
+    > .status {
+      @apply bg-background;
+    }
+  }
+}

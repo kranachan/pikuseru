@@ -9,9 +9,10 @@
 }
 
 * {
-  @apply select-none;
+  @apply select-none outline-none;
 
   font-family: 'mini-wakuwaku';
+  -webkit-tap-highlight-color: transparent;
 }
 
 html,

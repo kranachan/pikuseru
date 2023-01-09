@@ -1348,6 +1348,11 @@ react-router@6.4.5, react-router@^6.1.1:
   dependencies:
     "@remix-run/router" "1.0.5"
 
+react-sketch-canvas@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/react-sketch-canvas/-/react-sketch-canvas-6.2.0.tgz#4aa1f0b85012f37b8b2ae746a412ab9424badfa9"
+  integrity sha512-Z56RQN0viV9W3Y+DpZfQMi2lf3pO+UB4l+cMwnx7j7pQ9WHkQwN+qZKVFGANgpjXQMyY42NODF/DXjuKPCMf1w==
+
 react-use-measure@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/react-use-measure/-/react-use-measure-2.1.1.tgz#5824537f4ee01c9469c45d5f7a8446177c6cc4ba"

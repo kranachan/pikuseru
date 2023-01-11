@@ -13,6 +13,7 @@
     @apply text-primary/30;
   }
 
+  &.selected,
   &:active {
     @apply bg-primary/50;
 

@@ -1,10 +1,6 @@
 module.exports = {
   content: ['./index.html', './src/**/*.{ts,tsx}'],
   darkMode: 'jit',
-  content: [
-    './*.html',
-    './src/**/*.{js,jsx,ts,tsx}',
-  ],
   theme: {
     colors: {
       primary: 'rgb(var(--colors-primary))',

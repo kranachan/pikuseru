@@ -20,13 +20,15 @@ export const Dialog: FC<DialogProps> = (props) => {
         <Fragment>
           <motion.div
             className={styles.overlay}
-            animate={{ opacity: [0, 1] }}
-            exit={{ opacity: [1, 0] }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
             transition={{ duration: 0.4 }}
             onClick={onClose}
           />
           <motion.div
             className={clsx(styles.root, className)}
+            initial={{ scale: 0.5 }}
             animate={{ scale: [0.5, 1.05, 1] }}
             exit={{ scale: [1.05, 1, 0] }}
             transition={{ duration: 0.4 }}

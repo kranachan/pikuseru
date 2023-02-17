@@ -1,0 +1,22 @@
+.label {
+  @apply text-primary text-xl;
+  @apply border-b-4 border-primary rounded-sm;
+}
+
+.input-wrapper {
+  @apply h-10 flex items-center;
+}
+
+.input {
+  @apply w-40 text-xl;
+
+  background-color: transparent;
+
+  &.with-unit {
+    @apply pr-2;
+  }
+
+  &[type='number']::-webkit-inner-spin-button {
+    @apply appearance-none;
+  }
+}

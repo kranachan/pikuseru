@@ -4,12 +4,12 @@ import styles from './index.module.css'
 
 export type ButtonGroupProps = {
   groupName?: string
-  styleForButtons?: string
+  buttonClasses?: string
   children?: ReactNode
 } & React.HTMLAttributes<HTMLDivElement>
 
 export const ButtonGroup: FC<ButtonGroupProps> = (props) => {
-  const { groupName, styleForButtons, className, children, ...rest } = props
+  const { groupName, buttonClasses, className, children, ...rest } = props
   const childrens = Children.toArray(children)
   const groupedChildren = childrens.map((child, index) => {
     if (!isValidElement(child)) {
@@ -29,7 +29,7 @@ export const ButtonGroup: FC<ButtonGroupProps> = (props) => {
       className: clsx(
         child.props.className,
         childrens.length !== 1 && borderClass,
-        styleForButtons,
+        buttonClasses,
       ),
     })
   })

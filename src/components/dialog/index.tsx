@@ -2,13 +2,14 @@ import clsx from 'clsx'
 import { Button } from 'components/button'
 import { AnimatePresence, HTMLMotionProps, motion } from 'framer-motion'
 import { X } from 'lucide-react'
-import { FC, Fragment } from 'react'
+import { FC, Fragment, ReactNode } from 'react'
 import styles from './index.module.css'
 
 export type DialogProps = {
   open: boolean
   onClose: () => void
   headline: string
+  children?: ReactNode
 } & HTMLMotionProps<'div'>
 
 export const Dialog: FC<DialogProps> = (props) => {

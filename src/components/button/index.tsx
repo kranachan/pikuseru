@@ -1,9 +1,10 @@
 import clsx from 'clsx'
-import { FC } from 'react'
+import { FC, ReactNode } from 'react'
 import styles from './index.module.css'
 
 export type ButtonProps = {
   selected?: boolean
+  children?: ReactNode
 } & React.ButtonHTMLAttributes<HTMLButtonElement>
 
 export const Button: FC<ButtonProps> = (props) => {

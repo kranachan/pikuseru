@@ -1,10 +1,11 @@
 import clsx from 'clsx'
-import { Children, cloneElement, FC, isValidElement } from 'react'
+import { Children, cloneElement, FC, isValidElement, ReactNode } from 'react'
 import styles from './index.module.css'
 
 export type ButtonGroupProps = {
   groupName?: string
   styleForButtons?: string
+  children?: ReactNode
 } & React.HTMLAttributes<HTMLDivElement>
 
 export const ButtonGroup: FC<ButtonGroupProps> = (props) => {

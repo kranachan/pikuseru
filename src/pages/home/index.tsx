@@ -166,7 +166,7 @@ export const Home = () => {
         </div>
 
         <div className={styles['modify-bar']}>
-          <ButtonGroup groupName="RECORD" styleForButtons={'w-16 h-14'}>
+          <ButtonGroup groupName="RECORD" buttonClasses={'w-16 h-14'}>
             <Button>
               <Undo2 size={28} />
             </Button>
@@ -175,8 +175,7 @@ export const Home = () => {
             </Button>
           </ButtonGroup>
 
-          <ButtonGroup groupName="DRAWING" styleForButtons={'w-14 h-14'}>
-            <Button>
+          <ButtonGroup groupName="DRAWING" buttonClasses={'w-14 h-14'}>
               <Brush size={28} />
             </Button>
             <Button>
@@ -187,7 +186,7 @@ export const Home = () => {
             </Button>
           </ButtonGroup>
 
-          <ButtonGroup groupName="PRESENT" styleForButtons={'px-6 h-14'}>
+          <ButtonGroup groupName="PRESENT" buttonClasses={'px-6 h-14'}>
             <Button>
               <Aperture size={28} />
               <b>NONE</b>
@@ -195,7 +194,7 @@ export const Home = () => {
           </ButtonGroup>
 
           <section className={styles['modify-output']}>
-            <ButtonGroup groupName="SHARE TO" styleForButtons={'w-14 h-14'}>
+            <ButtonGroup groupName="SHARE TO" buttonClasses={'w-14 h-14'}>
               <Button>
                 {/* FIXME: SVG Alignment */}
                 <Twitter className={'relative left-0.5'} size={28} />

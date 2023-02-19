@@ -10,7 +10,7 @@
 
   width: max-content;
   height: max-content;
-  box-shadow: 2px 2px 0px rgb(var(--colors-primary));
+  box-shadow: 2px 2px 0px theme(colors.primary);
 
   > .header {
     @apply flex items-center;

@@ -1,0 +1,3 @@
+.cell {
+  @apply border-b border-r border-primary/10;
+}

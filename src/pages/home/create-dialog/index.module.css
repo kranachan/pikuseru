@@ -1,0 +1,7 @@
+.form-wrapper {
+  @apply flex gap-20 mt-10;
+}
+
+.continue {
+  @apply w-full mt-20;
+}

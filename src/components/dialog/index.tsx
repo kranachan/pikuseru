@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import { Button } from 'components/button'
+import { Icon } from 'components/icon'
 import { AnimatePresence, HTMLMotionProps, motion } from 'framer-motion'
-import { X } from 'lucide-react'
 import { FC, Fragment, ReactNode } from 'react'
 import styles from './index.module.css'
 
@@ -38,7 +38,7 @@ export const Dialog: FC<DialogProps> = (props) => {
             <div className={styles.header}>
               <b className={styles.headline}>{headline}</b>
               <Button className={styles['close-btn']} onClick={onClose}>
-                <X />
+                <Icon name="X" />
               </Button>
             </div>
             {children}

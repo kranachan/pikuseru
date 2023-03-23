@@ -1,22 +1,25 @@
 import clsx from 'clsx'
-import { FC, MouseEventHandler } from 'react'
+import { FC } from 'react'
 import { motion } from 'framer-motion'
 import styles from './index.module.css'
-import { LucideIcon } from 'lucide-react'
+import { LucideIconKey } from 'constants/icon'
+import { Icon } from 'components/icon'
 
 export type SwitchProps = {
   isOn: boolean
-  onIcon?: LucideIcon
-  offIcon?: LucideIcon
+  onIcon?: LucideIconKey
+  offIcon?: LucideIconKey
 } & React.HTMLAttributes<HTMLDivElement>
 
 export const Switch: FC<SwitchProps> = (props) => {
-  const { onIcon: OnIcon, offIcon: OffIcon, isOn, className, ...rest } = props
+  const { onIcon, offIcon, isOn, className, ...rest } = props
   return (
     <div data-is-on={isOn} className={clsx(styles.root, className)} {...rest}>
-      {isOn && OnIcon && <OnIcon className={styles['on-icon']} />}
+      {isOn && onIcon && <Icon name={onIcon} className={styles['on-icon']} />}
       <motion.div className={styles.status} layout transition={transition} />
-      {!isOn && OffIcon && <OffIcon className={styles['off-icon']} />}
+      {!isOn && offIcon && (
+        <Icon name={offIcon} className={styles['off-icon']} />
+      )}
     </div>
   )
 }

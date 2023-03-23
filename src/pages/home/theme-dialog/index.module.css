@@ -1,0 +1,29 @@
+.theme-header {
+  @apply flex items-center gap-3;
+  @apply text-primary text-xl mt-10;
+}
+
+.theme-colors {
+  @apply flex gap-10 mt-6;
+
+  > .theme-color-self {
+    @apply flex justify-center items-center;
+    @apply w-16 h-16 rounded-3xl text-background;
+    @apply cursor-pointer;
+
+    > .theme-color-selected-icon > path:first-child {
+      @apply origin-center;
+
+      animation: 8s rotate linear infinite;
+    }
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

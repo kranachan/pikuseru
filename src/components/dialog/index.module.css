@@ -1,10 +1,10 @@
 .overlay {
-  @apply fixed top-0 left-0 z-10;
+  @apply fixed top-0 left-0 z-50;
   @apply w-screen h-screen bg-background/80;
 }
 
 .root {
-  @apply fixed top-0 left-0 bottom-0 right-0 m-auto z-20;
+  @apply fixed top-0 left-0 bottom-0 right-0 m-auto z-50;
   @apply px-9 py-8 border border-primary rounded-3xl;
   @apply bg-background;
 

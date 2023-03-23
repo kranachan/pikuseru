@@ -1,0 +1,4 @@
+.canvas {
+  @apply w-1/2 bg-primary;
+  @apply flex flex-wrap;
+}

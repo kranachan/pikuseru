@@ -1,0 +1,13 @@
+.root {
+  @apply flex w-auto h-full;
+  @apply sticky left-0 top-0;
+}
+
+.panel {
+  @apply h-full bg-primary/30;
+  @apply border-r border-primary;
+}
+
+.expanded-button {
+  @apply rounded-l-none;
+}

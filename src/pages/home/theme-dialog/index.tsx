@@ -62,7 +62,7 @@ export const ThemeDialog: FC<ThemeDialogProps> = (props) => {
             >
               {isCurrentTheme && (
                 <Icon
-                  name="Verified"
+                  name="BadgeCheck"
                   className={styles['theme-color-selected-icon']}
                   size={32}
                 />

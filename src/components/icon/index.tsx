@@ -1,4 +1,4 @@
-import * as icons from 'lucide-react'
+import { icons } from 'lucide-react'
 import type { LucideProps } from 'lucide-react'
 import { FC } from 'react'
 import { LucideIconKey } from 'constants/icon'

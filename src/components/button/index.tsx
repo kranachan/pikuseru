@@ -17,6 +17,7 @@ export const Button: FC<ButtonProps> = (props) => {
         selected && styles.selected,
         className,
       )}
+      disabled={disabled}
       {...rest}
     >
       {children}
